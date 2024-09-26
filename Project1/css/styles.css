@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    font-size: 16px;
+    background-image: url('../images/C.jpg');
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center 20%;
+}
+
+header {
+    background-color: #005035;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+main {
+    flex: 1;
+}
+
+.My-projects {
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+    margin: 60px 0;
+    background-color: #005035;
+    border-radius: 10px;
+    margin-left: 600px;
+    margin-right: 600px;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin: 0 10%;
+}
+
+.project1, .project2, .project3, .project4, .project5 {
+    background-color: #005035;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.project1 img, .project2 img, .project3 img, .project4 img, .project5 img {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    height: 120px;
+    object-fit: cover;
+}
+
+.project1 h3, .project1 h3 a, .project2 h3, .project3 h3, .project4 h3, .project5 h3, .project1 p, .project2 p, .project3 p, .project4 p, .project5 p {
+    margin: 5px 0;
+    color: #fff;
+    max-width: 100%;
+    text-align: center;
+    padding: 0 10px;
+}
+
+footer {
+    background-color: #A49665;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+footer .social-icons a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .social-icons a:hover {
+    color: #ccc;
+}
